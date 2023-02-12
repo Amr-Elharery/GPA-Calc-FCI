@@ -9,6 +9,9 @@ html{
 ::-webkit-scrollbar{
   width: 6px;
 }
+::-webkit-scrollbar-track{
+  background-color: #EEE;
+}
 ::-webkit-scrollbar-thumb{
   background-color: rgb(39, 188, 39);
   border-radius: 6px;
@@ -20,16 +23,20 @@ html{
 body{
   font-family: Tahoma;
 }
-header{
+header, footer{
   padding: 20px;
   background-color: #CCC;
   text-align: center;
   font-size: 25px;
-  border-bottom: 3px solid #AAA;
+  border-bottom: 2px solid #AAA;
 }
 .responsive-table{
   overflow-x: auto;
 }
+.content{
+  min-height: calc(100vh - 87px);
+}
+
 section{
   display: flex;
   gap: 20px;
@@ -165,7 +172,12 @@ h3{
   display: none;
 }
 
-
+/* Footer */
+footer{
+  border-bottom: none;
+  border-top: 2px solid #AAA;
+  font-size: 16px;
+}
 
 /* Animation */
 
